@@ -5,13 +5,12 @@ use windows::Win32::System::Power::{
 
 #[frb(init)]
 pub fn init_app() {
-    // Default utilities - feel free to customize
     flutter_rust_bridge::setup_default_user_utils();
 }
 
-#[frb(sync)] // Synchronous mode for simplicity of the demo
+#[frb(sync)]
 pub fn start_keep_awake() -> Result<(), String> {
-    println!("start keep awake");
+    println!("start keeping awake");
     let flags: EXECUTION_STATE = ES_SYSTEM_REQUIRED | ES_DISPLAY_REQUIRED | ES_CONTINUOUS;
     set_thread_execution_state(flags);
     Ok(())
@@ -19,7 +18,7 @@ pub fn start_keep_awake() -> Result<(), String> {
 
 #[frb(sync)]
 pub fn stop_keep_awake() -> Result<(), String> {
-    println!("stop keep awake");
+    println!("stop keeping awake");
     set_thread_execution_state(ES_CONTINUOUS);
     Ok(())
 }

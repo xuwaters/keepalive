@@ -11,6 +11,7 @@
 1. **Download:** Obtain the latest release from [GitHub Releases](https://github.com/xuwaters/keepalive/releases).
 2. **Install:** Extract the files to your desired location.
 3. **Run:** Execute `KeepAlive.exe`.
+4. **Start:** Click the `Start` button.
 
 ## How It Works
 

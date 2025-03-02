@@ -21,3 +21,7 @@ The application utilizes the `SetThreadExecutionState` function to notify the sy
 ```powershell
 flutter run --device-id windows
 ```
+
+## License
+
+MIT

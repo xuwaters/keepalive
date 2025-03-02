@@ -1,16 +1,23 @@
-# keepalive
+# Keep Alive
 
-A new Flutter project.
+**KeepAlive** is a Windows application designed to prevent your system from idling or locking the screen on remote virtual desktops, ensuring uninterrupted connectivity.
+
+## Features
+
+- **Prevents System Idle/Screen Lock:** Continuously keeps the system active, avoiding disconnections due to inactivity.
+
+## Installation
+
+1. **Download:** Obtain the latest release from [GitHub Releases](https://github.com/xuwaters/keepalive/releases).
+2. **Install:** Extract the files to your desired location.
+3. **Run:** Execute `KeepAlive.exe`.
+
+## How It Works
+
+The application utilizes the `SetThreadExecutionState` function to notify the system to remain active, preventing idle states and screen locks during remote sessions.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```powershell
+flutter run --device-id windows
+```

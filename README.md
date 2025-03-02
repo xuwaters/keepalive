@@ -14,7 +14,8 @@
 
 ## How It Works
 
-The application utilizes the `SetThreadExecutionState` function to notify the system to remain active, preventing idle states and screen locks during remote sessions.
+The application utilizes the [`SetThreadExecutionState`](https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-setthreadexecutionstate) function to notify the system to remain active, preventing idle states and screen locks during remote sessions.
+Reference: https://gist.github.com/jcefoli/36ed07c08dc3795648b3f45185f721c5
 
 ## Getting Started
 
